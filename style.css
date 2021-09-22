@@ -72,10 +72,13 @@ img {
 }
 
 @media screen and (max-width: 420px) {
-  #lezioni.container .row {
+  .body {
+    width: 100vw;
+  }
+  #lezioni.container .row, #why.container .row {
     background-color: #F2F2CD;
   }
-  #why.container .row {
-    background-color: #F2F2CD;
+  #lezioni .row>.left, #lezioni .row>.right {
+    width: 100%;
   }
 }
