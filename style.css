@@ -73,12 +73,21 @@ img {
 
 @media screen and (max-width: 420px) {
   .body {
-    width: 100vw;
+    width: 100%;
   }
   #lezioni.container .row, #why.container .row {
     background-color: #F2F2CD;
   }
-  #lezioni .row>.left, #lezioni .row>.right {
+  #lezioni .row>.left, #lezioni .row>.right, .row {
     width: 100%;
+  }
+  #steps .row>.left, #steps .row>.central, #steps .row>.right {
+    display: grid;
+    width: 100%;
+  }
+  #steps .row>.left>img, #steps .row>.central>img, #steps .row>.right>img {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
